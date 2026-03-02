@@ -1,68 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Sign Up | Festora</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="../css/signup.css">
-</head>
+    <link rel="stylesheet" href="../css/signup.css" />
+  </head>
 
-<body>
-
+  <body>
     <!--navbar-->
     <header class="navbar">
-        <div class="logo">
-            <img src="/Assets/logo/festo-logo.svg" alt="Festora official logo">
-            <span>Festora</span>
-        </div>
+      <div class="logo">
+        <img src="/Assets/logo/festo-logo.svg" alt="Festora official logo" />
+        <span>Festora</span>
+      </div>
     </header>
 
     <!--signup's-->
     <section class="auth-section">
+      <div class="auth-card">
+        <h2>Create Your Account</h2>
+        <p class="sub-text">Join Festora and start exploring events</p>
 
-        <div class="auth-card">
-            <h2>Create Your Account</h2>
-            <p class="sub-text">Join Festora and start exploring events</p>
+        <form id="signup-form">
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required />
+          </div>
 
-            <form>
+          <div class="input-group">
+            <label> Username</label>
+            <input type="text" placeholder="Enter your  username" required />
+          </div>
 
-                <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your full name" required>
-                </div>
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required />
+          </div>
 
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="Enter your email" required>
-                </div>
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Create a password" required />
+          </div>
 
-                <div class="input-group">
-                    <label>Password</label>
-                    <input type="password" placeholder="Create a password" required>
-                </div>
+          <div class="input-group">
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
 
-                <div class="input-group">
-                    <label>Confirm Password</label>
-                    <input type="password" placeholder="Confirm your password" required>
-                </div>
+          <button id="sub-btn" type="submit" class="btn-auth">Sign Up</button>
+        </form>
 
-                <button type="submit" class="btn-auth">
-                    Sign Up
-                </button>
-
-            </form>
-
-            <p class="switch-text">
-                Already have an account?
-                <a href="/html/login.html">Log In</a>
-            </p>
-        </div>
-
+        <p class="switch-text">
+          Already have an account?
+          <a href="/html/login.html">Log In</a>
+        </p>
+      </div>
     </section>
 
-</body>
-
+    <script src="../JS/signUp.js"></script>
+  </body>
 </html>
