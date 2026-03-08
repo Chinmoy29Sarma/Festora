@@ -1,53 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Login | Festora</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <title>Login | Festora</title>
 
-    <link rel="stylesheet" href="../css/signup.css" />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-  <body>
-    <!--navbar-->
-    <header class="navbar">
-      <div class="logo">
-        <img src="/Assets/logo/festo-logo.svg" alt="Festora official logo" />
-        <span>Festora</span>
-      </div>
-    </header>
+  <link rel="stylesheet" href="../css/signup.css" />
+</head>
 
-    <!--logins-->
-    <section class="auth-section">
-      <div class="auth-card">
-        <h2>Welcome Back</h2>
-        <p class="sub-text">Login to continue exploring events</p>
+<body>
+  <!--navbar-->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../Assets/logo/festo-logo.svg" alt="Festora official logo" />
+      <span>Festora</span>
+    </div>
+  </header>
 
-        <form id="loginForm">
-          <div class="input-group">
-            <label>Username</label>
-            <input type="email" placeholder="Enter your username" required />
-          </div>
+  <!--logins-->
+  <section class="signup-section">
+    <div class="signup-card">
+      <h2>Welcome Back</h2>
+      <p class="sub-text">Login to continue exploring events</p>
 
-          <div class="input-group">
-            <label>Password</label>
-            <input type="password" placeholder="Enter your password" required />
-          </div>
+      <form id="loginForm">
+        <div class="input-group">
+          <label>Username</label>
+          <input type="email" placeholder="Enter your username" required />
+        </div>
 
-          <button id="login-btn" type="submit" class="btn-auth">Log In</button>
-        </form>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required />
+        </div>
 
-        <p class="switch-text">
-          Don’t have an account?
-          <a href="signup.html">Sign Up</a>
-        </p>
-      </div>
-    </section>
+        <button id="sub-btn" type="submit" class="btn-signup">Log In</button>
+      </form>
 
-    <script src="../JS/signUp.js"></script>
-  </body>
+      <p class="switch-text">
+        Don’t have an account?
+        <a href="signup.html">Sign Up</a>
+      </p>
+    </div>
+  </section>
+
+  <script src="../JS/signUp.js"></script>
+</body>
+
 </html>
