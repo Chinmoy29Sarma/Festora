@@ -2,215 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festora | Discover College Events</title>
+  <title>Festora | Discover College Events</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
+  <!-- navbar-->
+  <header class="navbar">
 
     <div class="logo">
-        <img src="./Assets/logo/festo-logo.svg" alt="Festora official logo">
-        <span>Festora</span>
+      <img src="./Assets/logo/festo-logo.svg" alt="Festora official logo">
+      <span>Festora</span>
     </div>
 
     <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#featured">Explore</a>
-        <a href="#">Add Event</a>
+      <a href="#home">Home</a>
+      <a href="#featured">Explore</a>
+      <a href="#">Add Event</a>
     </nav>
 
     <div class="nav-actions">
-        <a href="./html/login.html" class="btn-outline">Log In</a>
-        <a href="./html/signup.html" class="btn-primary">Sign Up</a>
+      <a href="./html/login.html" class="btn-outline">Log In</a>
+      <a href="./html/signup.html" class="btn-primary">Sign Up</a>
     </div>
 
-</header>
+  </header>
 
 
-<main>
+  <main>
 
-<!-- ================= HERO SECTION ================= -->
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-        <h1>Discover Amazing College Events</h1>
-
-        <p>
-            Find hackathons, workshops, competitions and networking
-            opportunities happening across campuses.
-        </p>
+    <!--hero-section-->
+    <section class="hero" id="home">
+      <div class="hero-content">
+          <h1>Discover Amazing College Events</h1>
+          <p>Find hackathons, workshops, competitions and networking opportunities happening across campuses.</p>
 
         <!-- SEARCH BAR -->
         <div class="search-container">
+          <div class="search-box">
+            <input type="text" placeholder="Search for Events, Hackathons..." aria-label="Search events">
+            <button class="search-btn">Search</button>
+          </div>
 
-            <div class="search-box">
-                <input type="text"
-                       placeholder="Search for Events, Hackathons..."
-                       aria-label="Search events">
+          <!-- FILTERS -->
+          <div class="filter-row">
+            <select>
+              <option>All Modes</option>
+              <option>Online</option>
+              <option>Offline</option>
+            </select>
 
-                <button class="search-btn">Search</button>
-            </div>
+            <select>
+              <option>All Cities</option>
+              <option>Guwahati</option>
+              <option>Delhi</option>
+              <option>Mumbai</option>
+            </select>
 
-            <!-- FILTERS -->
-            <div class="filter-row">
-
-                <select>
-                    <option>All Modes</option>
-                    <option>Online</option>
-                    <option>Offline</option>
-                </select>
-
-                <select>
-                    <option>All Cities</option>
-                    <option>Guwahati</option>
-                    <option>Delhi</option>
-                    <option>Mumbai</option>
-                </select>
-
-                <select>
-                    <option>All Categories</option>
-                    <option>Hackathon</option>
-                    <option>Workshop</option>
-                    <option>Competition</option>
-                    <option>Cultural Fest</option>
-                </select>
-
-            </div>
-
+            <select>
+              <option>All Categories</option>
+              <option>Hackathon</option>
+              <option>Workshop</option>
+              <option>Competition</option>
+              <option>Cultural Fest</option>
+            </select>
+          </div>
         </div>
 
-    </div>
+      </div>
+    </section>
 
-</section>
 
-
-<!-- ================= FEATURED EVENTS ================= -->
-<section class="featured" id="featured">
-
-    <h2 class="section-title">Featured Events</h2>
-
-    <div class="events-grid">
-
+    <!-- ================= FEATURED EVENTS ================= -->
+    <section class="featured" id="featured">
+      <h2 class="section-title">Featured Events</h2>
+      <div class="events-grid">
         <!-- EVENT CARD -->
         <article class="event-card">
+          <img src="./Assets/events/hackathon.jpg" alt="Hackathon 2026 at Gauhati University">
+          <div class="event-info">
 
-            <img src="./Assets/events/hackathon.jpg"
-                 alt="Hackathon 2026 at Gauhati University">
-
-            <div class="event-info">
-
-                <h3>Hackathon 2026</h3>
-
-                <p class="college">Gauhati University</p>
-
-                <p class="meta">
-                    March 15, 2026 • 120 Seats
-                </p>
-
-                <a href="./html/register.html" class="btn-primary">
-                    Register
-                </a>
-
-            </div>
-
+            <h3>Hackathon 2026</h3>
+            <p class="college">Gauhati University</p>
+            <p class="meta">March 15, 2026 • 120 Seats</p>
+            <a href="./html/register.html" class="btn-primary">Register</a>
+          </div>
         </article>
 
 
         <!-- EVENT CARD -->
         <article class="event-card">
+          <img src="./Assets/events/workshop.jpg" alt="AI and Web Development Workshop at IIT Guwahati">
+          <div class="event-info">
 
-            <img src="./Assets/events/workshop.jpg"
-                 alt="AI and Web Development Workshop at IIT Guwahati">
-
-            <div class="event-info">
-
-                <h3>AI & Web Dev Workshop</h3>
-
-                <p class="college">IIT Guwahati</p>
-
-                <p class="meta">
-                    April 3, 2026 • 80 Seats
-                </p>
-
-                <a href="./html/register.html" class="btn-primary">
-                    Register
-                </a>
-
-            </div>
-
+            <h3>AI & Web Dev Workshop</h3>
+            <p class="college">IIT Guwahati</p>
+            <p class="meta">April 3, 2026 • 80 Seats</p>
+            <a href="./html/register.html" class="btn-primary">Register</a>
+          </div>
         </article>
 
 
         <!-- EVENT CARD -->
         <article class="event-card">
+          <img src="./Assets/events/cultural.jpg" alt="Cultural Night 2026 at Assam Engineering College">
+          <div class="event-info">
 
-            <img src="./Assets/events/cultural.jpg"
-                 alt="Cultural Night 2026 at Assam Engineering College">
-
-            <div class="event-info">
-
-                <h3>Cultural Night 2026</h3>
-
-                <p class="college">Assam Engineering College</p>
-
-                <p class="meta">
-                    May 10, 2026 • 300 Seats
-                </p>
-
-                <a href="./html/register.html" class="btn-primary">
-                    Register
-                </a>
-
-            </div>
-
+            <h3>Cultural Night 2026</h3>
+            <p class="college">Assam Engineering College</p>
+            <p class="meta">May 10, 2026 • 300 Seats</p>
+            <a href="./html/register.html" class="btn-primary">Register</a>
+          </div>
         </article>
 
-    </div>
-
-</section>
-
-</main>
+      </div>
+    </section>
+  </main>
 
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
     <div class="footer-content">
 
-        <h3>Festora</h3>
+      <h3>Festora</h3>
+      <p>Connecting students to opportunities across campuses.</p>
 
-        <p>
-            Connecting students to opportunities across campuses.
-        </p>
-
-        <div class="footer-links">
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy Policy</a>
-        </div>
-
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
     </div>
 
     <p class="copyright">
-        © 2026 Festora. Built by Abhishek & Chinmoy.
+      © 2026 Festora. Built by Abhishek & Chinmoy.
     </p>
 
-</footer>
+  </footer>
 
-
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 </html>
